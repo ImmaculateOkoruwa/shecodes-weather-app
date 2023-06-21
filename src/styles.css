@@ -2,6 +2,10 @@ body {
   font-family: arial, sans-serif;
 }
 
+a {
+  color: #7c7c7c;
+}
+
 h1 {
   color: #7c7c7c;
   font-size: 24px;
@@ -22,6 +26,14 @@ li {
   height: 19px;
   line-height: 1;
   list-style: none;
+}
+small {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.days {
+  margin-top: 30px;
 }
 
 .weather-app {

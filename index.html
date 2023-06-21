@@ -10,6 +10,9 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/82df8ac0f2.js"
+      crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
@@ -51,7 +54,7 @@
           <li id="date"></li>
           <li id="description">Partly Cloudy</li>
         </ul>
-        <div class="row">
+        <div class="row" id="weather-summary">
           <div class="col-6">
             <div class="clearfix">
               <span id="icon"
@@ -77,8 +80,61 @@
             </ul>
           </div>
         </div>
+        <div class="days">
+          <div class="row">
+            <div class="col">Mon</div>
+            <div class="col">Tues</div>
+            <div class="col">Wed</div>
+            <div class="col">Thurs</div>
+            <div class="col">Fri</div>
+            <div class="col">Sat</div>
+            <div class="col">Sun</div>
+          </div>
+        </div>
+        <div class="emojis">
+          <div class="row">
+            <div class="col">
+              <i class="fa-solid fa-sun" style="color: #edbc07"></i>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-sun" style="color: #edbc07"></i>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-cloud" style="color: #64a4e8"></i>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-cloud" style="color: #64a4e8"></i>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-cloud" style="color: #64a4e8"></i>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-sun" style="color: #edbc07"></i>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-sun" style="color: #edbc07"></i>
+            </div>
+          </div>
+        </div>
+        <div class="temperatures">
+          <div class="row">
+            <div class="col">83°</div>
+            <div class="col">85°</div>
+            <div class="col">75°</div>
+            <div class="col">78°</div>
+            <div class="col">80°</div>
+            <div class="col">84°</div>
+            <div class="col">84°</div>
+          </div>
+        </div>
       </div>
     </div>
+    <small>
+      <a
+        href="https://github.com/ImmaculateOkoruwa/shecodes-weather-app"
+        target="_blank"
+        >Open-source code</a>, by Immaculate Okoruwa</small>
+    </small>
     <script src="src/index.js"></script>
   </body>
 </html>
