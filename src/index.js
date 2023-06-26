@@ -1,4 +1,5 @@
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -79,6 +80,9 @@ function showWeather(response) {
 
   let precipiationElt = document.querySelector("#precipitation");
   precipiationElt.innerHTML = `Precipiation: ${response.data.clouds.all}%`;
+
+  let dateElement = document.querySelector("#date");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 let currentLocationButton = document.querySelector("#current-location-button");

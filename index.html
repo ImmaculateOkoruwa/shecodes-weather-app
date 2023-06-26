@@ -22,6 +22,7 @@
       <source src="images/Coastline.mp4" type="video/mp4" />
     </video>
     <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weather-app">
         <form class="search-form" id="search-form">
           <div class="row">
@@ -49,10 +50,10 @@
             </div>
           </div>
         </form>
-        <h1 id="city">Sydney NSW, Australia</h1>
+        <h1 id="city"></h1>
         <ul>
-          <li id="date"></li>
-          <li id="description">Partly Cloudy</li>
+          <li >Last updated: <span  id="date"></span></li>
+          <li id="description"></li>
         </ul>
         <div class="row" id="weather-summary">
           <div class="col-6">
@@ -64,7 +65,7 @@
                   class="weather-icon float-left"
               /></span>
               <div class="float-left">
-                <span class="temperature" id="temperature">19</span
+                <span class="temperature" id="temperature"></span
                 ><span class="units">
                   <a href="#" id="celsius-link">°C</a> |
                   <a href="#" id="fahrenheit-link">°F</a>
@@ -74,9 +75,9 @@
           </div>
           <div class="col-6">
             <ul>
-              <li id="precipitation">Precipitation: 0%</li>
-              <li id="humidity">Humidity: 77%</li>
-              <li id="wind">Wind: 8 km/h</li>
+              <li id="precipitation"></li>
+              <li id="humidity"></li>
+              <li id="wind"></li>
             </ul>
           </div>
         </div>
@@ -128,13 +129,15 @@
           </div>
         </div>
       </div>
-    </div>
-    <small>
+      <small>
       <a
         href="https://github.com/ImmaculateOkoruwa/shecodes-weather-app"
         target="_blank"
         >Open-source code</a>, by Immaculate Okoruwa</small>
     </small>
+      </div>
+    </div>
+    
     <script src="src/index.js"></script>
   </body>
 </html>

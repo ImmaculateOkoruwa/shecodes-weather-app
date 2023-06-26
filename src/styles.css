@@ -27,11 +27,11 @@ li {
   line-height: 1;
   list-style: none;
 }
-small {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+
+li::first-letter {
+  text-transform: capitalize;
 }
+
 .days {
   margin-top: 30px;
 }
@@ -43,6 +43,10 @@ small {
   border-radius: 10px;
   max-width: 600px;
   background-color: #f8f9fa;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
 }
 
 .weather-icon {
