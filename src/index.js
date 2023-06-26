@@ -1,5 +1,4 @@
-function formatDate(timestamp) {
-  let date = new Date(timestamp);
+function formatDate(date) {
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -81,8 +80,11 @@ function showWeather(response) {
   let precipiationElt = document.querySelector("#precipitation");
   precipiationElt.innerHTML = `Precipiation: ${response.data.clouds.all}%`;
 
-  let dateElement = document.querySelector("#date");
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let currentLocationButton = document.querySelector("#current-location-button");
