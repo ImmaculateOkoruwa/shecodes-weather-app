@@ -4,6 +4,7 @@ body {
 
 a {
   color: #7c7c7c;
+  text-align: center;
 }
 
 h1 {
@@ -32,6 +33,10 @@ li::first-letter {
   text-transform: capitalize;
 }
 
+small {
+  display: block;
+  text-align: center;
+}
 .days {
   margin-top: 30px;
 }
@@ -41,7 +46,7 @@ li::first-letter {
   padding: 15px;
   margin: 20px auto;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 700px;
   background-color: #f8f9fa;
 }
 .weather-app-wrapper {
@@ -86,4 +91,12 @@ li::first-letter {
 }
 #weather-properties {
   padding: 50px;
+}
+
+.weather-forecast-temperature-min {
+  color: #7c7c7c;
+}
+
+#weather-summary {
+  margin-bottom: 20px;
 }
